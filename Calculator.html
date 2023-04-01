@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="Percentage();return false">
+<h1>Percentage Calculator</h1>
+<label for="tm">Total Marks</label>
+<input type="number" name="tm" id="std_tm">
+<br><br>
+<label for="om">Obtain Marks</label>
+<input type="number" name="om" id="std_om">
+<br><br>
+<button type="Submit">Calculator</button>
+<br><br>
+    </form>
+    <h2 id="Majid">majid-noor462</h2>
+    <script>
+        function Percentage(){
+        let a=document.querySelector("#std_tm").value;
+        let b=document.querySelector("#std_om").value;
+        result=(b/a)*100;
+        let d=result.toFixed(1)
+        document.querySelector("#Majid").innerHTML= (`Your Percentage = ${d}%`);
+        }
+    </script>
+</body>
+</html>
